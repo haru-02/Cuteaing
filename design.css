@@ -1,0 +1,186 @@
+body,
+html {
+  margin: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+
+.section-middle-1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: white;
+}
+
+.section-qualities {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  background-image: url("assets/tea-4.jpg");
+}
+
+.section-qualities h3 {
+  color: #fff;
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: white;
+}
+
+.heading-menu h1,
+h2 {
+  padding-bottom: 0;
+  color: #a69b55;
+}
+
+.section-top {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url("assets/tea-field.jpg");
+  background-repeat: no;
+  background-size: cover;
+  animation: slide 10s infinite;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h1 {
+  color: white;
+  font-size: 60px;
+  letter-spacing: 16px;
+}
+
+.content p {
+  color: white;
+  font-size: 30px;
+  letter-spacing: 8px;
+}
+
+#scroll-down-animation {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mouse {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  height: 80px;
+  width: 50px;
+  position: relative;
+}
+
+.move {
+  position: absolute;
+  background-color: #fff;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: move 1s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url("assets/tea-field.jpg");
+  }
+  33% {
+    background-image: url("assets/tea-1.jpg");
+  }
+  67% {
+    background-image: url("assets/tea-2.jpg");
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-50%, 10px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, 40px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 60px);
+    opacity: 0;
+  }
+}
+
+.hr-theme-slash-2 {
+  display: flex;
+}
+.hr-line {
+  width: 100%;
+  position: relative;
+  margin: 15px;
+  border-bottom: 1px solid #a69b55;
+}
+.hr-icon {
+  position: relative;
+  top: 3px;
+  color: #a69b55;
+}
+
+.hr-inv {
+  width: 20%;
+  position: relative;
+  margin: auto;
+  border-bottom: 2px solid white;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("assets/tea-3.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax h1 {
+  color: white;
+}
+
+#enquire-now {
+  background-color: #a69b55;
+  color: white;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: none;
+}
+
+.subh3 {
+  color: white;
+}
